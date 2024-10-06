@@ -172,3 +172,105 @@ div.homePageFeature h3.featureTitle{
 div.homePageFeature p.featureDescription{
     color: #848484;
 }
+
+div.homepageNotified{
+    background: #e3e3e3;
+    padding: 25px 0;
+}
+
+div.homepageNotifiedConainer{
+    display: flex;
+    flex-direction: row;
+}
+div.homepageNotifiedConainer > div{
+    width: 50%;
+}
+
+div.homepageNotifiedConainer h3{
+    margin-bottom: 20px;
+}
+div.homepageNotifiedConainer p{
+    color: #848484;
+    line-height: 150%;
+    margin-bottom: 45px;
+    width: 90%;
+}
+
+div.fromContainer{
+    position: relative;
+    width: 80%;
+}
+div.fromContainer input{
+    border: none;
+    border-radius: 14px;
+    padding: 15px 10px;
+    width: 100%;
+}
+div.fromContainer button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border:none;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    padding: 0 30px;
+    font-size: 22px;
+    background: #c82c36;
+    color: #fff;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+div.socials{
+    text-align: center;
+    max-height: 20vh;
+}
+div.socialsContent h3{
+    margin-top: 20px;
+}
+div.socialsContent p{
+    margin: 15px;
+    color: #848484;
+}
+
+div.socialMedia{
+    margin: 20px;
+}
+
+div.socialMedia a{
+    color: #FFF;
+    border-radius: 50%;
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px 5px;
+    background-color: rgba(200,44,54);;
+}
+
+div.socialMedia a:hover{
+    color: rgba(200,44,54);
+    font-size: 32px;
+    transition: 0.5s all;
+    background-color: #fff;
+}
+
+div.MenuFooter{
+    background-color: rgba(209,204,204,.5);
+}
+div.MenuFooterContain{
+    text-align: center;
+    padding: 20px 0;
+}
+div.MenuFooterContain a{
+    text-decoration: none;
+    margin: 10px 15px;
+    color: rgba(63, 63, 63, 0.5);
+}
+div.MenuFooterContain a:hover{
+    color: #000;
+    transition: 0.5s all;
+    font-size: 20px;
+}
