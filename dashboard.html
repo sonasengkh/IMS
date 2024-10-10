@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Inventory Management System</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://kit.fontawesome.com/c6386a6287.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="dashboard_MainContent">
+        <div class="dashboard_sideBar" id="dashboard_sideBar">
+            <h3 id="dashboard_logo" class="dashboard_logo">IMS</h3>
+            <div class="dashboard_user">
+                <img id="dashboard_user" src="images/user.jpg" alt=""/>
+                <span id="dashboard_username">Khna Mang</span>
+            </div>
+            <div class="dashboard_SideBarMenu">
+                <ul>
+                    <li class="menuActive"><a href=""><i class="fa-solid fa-house"></i><span class="menuIcon">&nbsp;Dashboard</span></a></li>
+                    <li><a href=""><i class="fa-solid fa-gauge-high"></i><span class="menuIcon">&nbsp;Report</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="dashbaord_content_container" id="dashbaord_content_container">
+            <div class="dashbaord_top_nav">
+                <a id= "toggleBtn" href=""><i class="fa-solid fa-bars"></i></a>
+                <a id="logoutIcon" href=""><i class="fa-solid fa-arrow-right-from-bracket"></i> Log-out</a>
+            </div>
+            <div class="dashboard_content"></div>
+        </div>
+    </div>
+<script>
+    var sidebarOpen = true;
+    toggleBtn. addEventListener("click", (event) => {
+        if (sidebarOpen){
+            event.preventDefault();
+            dashboard_sideBar.style.transition='0.5s all';
+            dashboard_sideBar.style.width = "5%";
+            dashboard_logo.style.fontSize="30px";
+            dashbaord_content_container.style.width = "95%";
+            dashboard_user.style.width="50px";
+            dashboard_user.style.height="50px";
+            dashboard_username.style.display ="none";
+            menuIcon = document.getElementsByClassName("menuIcon");
+            for (let index = 0; index < menuIcon.length; index++) {
+                menuIcon[index].style.display="none";
+            }
+            console.log(menuIcon);
+            document.getElementsByClassName("dashboard_SideBarMenu")[0].style.textAlign = "center";
+            sidebarOpen =false;
+        }else{
+            event.preventDefault();
+            dashboard_sideBar.style.transition='0.5s all';
+            dashboard_sideBar.style.width = "20%";
+            dashboard_logo.style.fontSize="90px";
+            dashbaord_content_container.style.width = "80%";
+            dashboard_user.style.width="70px";
+            dashboard_user.style.height="70px";
+            dashboard_username.style.display ="inline-block";
+            menuIcon = document.getElementsByClassName("menuIcon");
+            for (let index = 0; index < menuIcon.length; index++) {
+                menuIcon[index].style.display="inline-block";
+            }
+            console.log(menuIcon);
+            document.getElementsByClassName("dashboard_SideBarMenu")[0].style.textAlign = "left";
+            sidebarOpen =true;
+        }
+    });
+</script>
+</body>
+</html>

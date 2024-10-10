@@ -274,3 +274,91 @@ div.MenuFooterContain a:hover{
     transition: 0.5s all;
     font-size: 20px;
 }
+
+/* Dashboard Style */
+div.dashboard_MainContent{
+    display: flex;
+    flex-direction: row;  
+    min-height: 100vh; 
+}
+div.dashboard_sideBar{
+    width: 20%;
+    background: rgba(209,204,204,.5);
+}
+h3.dashboard_logo{
+    text-align: center;
+    color: rgba(200,44,54);
+    font-size: 90px;
+}
+div.dashboard_user{
+    position: relative;
+    border-bottom: 2px solid #c82c36;
+    text-align: center;
+    padding-bottom: 20px;
+}
+div.dashboard_user img{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid rgba(200,44,54);
+    vertical-align: middle;
+    
+}
+div.dashboard_user span{
+    position: relative;
+    display: inline-block;
+    top: 20%;
+    font-size: 20px;
+    color: #c82c36;   
+    padding-left: 10px;
+}
+
+div.dashboard_SideBarMenu ul{
+    list-style-type: none;  
+    margin: 0;
+    padding: 0;
+}
+div.dashboard_SideBarMenu li{
+    padding: 10px 20px;   
+}
+div.dashboard_SideBarMenu li.menuActive{
+    padding: 10px 20px;
+    background: #c82c36;
+    color: #FFF;
+}
+div.dashboard_SideBarMenu li.menuActive >a{
+    background: #c82c36;
+    color: #FFF;
+}
+div.dashboard_SideBarMenu li:hover{
+    padding: 10px 20px;
+    background: #c82c36;
+    color: #FFF;
+}
+div.dashboard_SideBarMenu li:hover >a{
+    background: #c82c36;
+    color: #FFF;
+}
+div.dashboard_SideBarMenu a{
+    text-decoration: none;
+    color: rgba(63, 63, 63, 0.9);
+    font-size: 20px;
+    
+}
+
+div.dashbaord_content_container{
+    width: 80%;
+}
+div.dashbaord_top_nav{
+    background: rgba(209,204,204,.5);
+    padding: 15px;
+}
+div.dashbaord_top_nav a{
+    text-decoration: none;
+    color: rgba(63, 63, 63, 0.9);   
+    font-size: 16px;
+}
+div.dashbaord_top_nav a#logoutIcon{
+    float: right;
+}
