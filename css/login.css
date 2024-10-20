@@ -79,9 +79,21 @@ div.loginButtonContainer button{
 }
 
 div.header{
+    padding-top: 5px;
     width: 100%;
-    height: 10px;
+    height: 40px;
     background: #c82c36;
+    text-align: right;
+}
+div.header a:hover{
+    border: 1px solid #fff;
+    padding: 5px;
+    font-size: 19px;
+}
+div.header a{
+    color: #FFF;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 div.banner{

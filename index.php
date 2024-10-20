@@ -9,7 +9,11 @@
     <script src="https://kit.fontawesome.com/c6386a6287.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header"></div>
+    <div class="header">
+        <div class="homepageContainer">
+            <a href="login.php">Login</a>
+        </div>
+    </div>
     <div class="banner">
         <div class="homepageContainer">
             <div class="bannerHeader">

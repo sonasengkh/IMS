@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!$_SESSION['user']) header('location: login.php');
+
+$user = $_SESSION['user'];
+//var_dump($user['email']);
+// die;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +22,7 @@
             <h3 id="dashboard_logo" class="dashboard_logo">IMS</h3>
             <div class="dashboard_user">
                 <img id="dashboard_user" src="images/user.jpg" alt=""/>
-                <span id="dashboard_username">Khna Mang</span>
+                <span id="dashboard_username"><?php echo $user["first_name"].' '. $user["last_name"] ?></span>
             </div>
             <div class="dashboard_SideBarMenu">
                 <ul>
@@ -25,7 +34,7 @@
         <div class="dashbaord_content_container" id="dashbaord_content_container">
             <div class="dashbaord_top_nav">
                 <a id= "toggleBtn" href=""><i class="fa-solid fa-bars"></i></a>
-                <a id="logoutIcon" href=""><i class="fa-solid fa-arrow-right-from-bracket"></i> Log-out</a>
+                <a id="logoutIcon" href="logout.php"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log-out</a>
             </div>
             <div class="dashboard_content"></div>
         </div>
